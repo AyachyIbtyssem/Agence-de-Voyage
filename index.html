@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Bienvenue à notre site web Agence de Voyage</title>
+    <meta name="author" content="Agence de Voyage owner">
+    <meta name="description" content="Storefront for Cake's Shop">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="logo.png">
+    <script>
+
+        function save() {
+            localStorage.setItem("liked", true);
+        }
+
+        window.onload = function () {
+            var favorite = document.getElementById('favorite');
+            if (window.localStorage) {
+                var storage = window.localStorage;
+                if (storage.getItem('liked') == 'true') {
+                    favorite.innerHTML = "Merci d'avoir aimé nos produits!";
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+           margin-top: 0px;
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           margin-left: auto;
+           margin-right: auto;
+           background-color: #DEE5D4;
+       }
+   
+       #mainheader {
+           background-color: #001F3F;
+       }
+   
+       #leftmenu {
+           float: left;
+           width: 30%;
+           margin-bottom: 20px;
+       }
+   
+       nav {
+           height: 60px;
+           width: 1000px;
+           margin: 0 auto 20px;
+       }
+   
+       .searchbox {
+           padding: 5px;
+           margin: 10px 10px;
+           width: 200px;
+       }
+       nav>ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+    nav>ul>li {
+            float: left;
+        }
+
+        nav>ul>li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+   
+       #main {
+           float: right;
+           width: 70%;
+           margin-bottom: 20px;
+       }
+   
+       footer {
+           clear: both;
+           width: 100%;
+       }
+   
+       header,
+       section,
+       footer,
+       aside,
+       nav,
+       main,
+       article,
+       figure {
+           display: block;
+       }
+   </style>
+</head>
+
+
+<body>
+    <header id="mainheader">
+        <nav>
+         <ul>
+             <li><img src="voyagePrestige.png" height="55" /></li>
+             <li><a href="index.html" >Home</a></li>
+             <li><a href="tousdetails.html">Tous</a></li>
+         </ul>
+     </nav> 
+     </header>
+
+    <div style="width:1000px;margin-left: auto;margin-right: auto;">
+        <aside id="leftmenu">
+            <img src="logo.png" width="200" alt="agence de voyage" height="200"/>
+            <header>
+                <h4 style="text-align: center;">Explorez nos Voyages</h4>
+            </header>
+            <input type="search" class="searchbox" placeholder="chercher dans notre agence" />
+            
+        </aside>
+        <main id="main">
+            <button onclick="save()" type="button">J'aime</button>
+            <span id="favorite"></span>
+        <article>
+
+                <header>
+                    <h1 style="font-size:35px;color:#3A6D8C">Bienvenue à notre Agence de Voyage !</h1>
+                </header>
+                <h2>Notre histoire</h2>
+    
+    <h1>Bienvenue à notre Agence de Voyage !</h1>
+
+    <p> Bienvenue sur <b>Voyage Prestige</b>, votre spécialiste des voyages sur mesure ! 
+        Que vous soyez à la recherche d'une aventure inédite, d'une escapade romantique ou d'un séjour détente en famille, nous avons la destination parfaite pour vous.
+        Notre agence met un point d'honneur à vous offrir des services personnalisés, adaptés à vos envies et à votre budget, afin que chaque voyage devienne une expérience unique.
+        Grâce à notre expertise, vous pourrez explorer les quatre coins du globe en toute sérénité, en profitant d'offres exclusives et de conseils d'experts.
+    </p>
+    <p> Chez <b>Voyage Prestige</b>, nous croyons que chaque voyage est <i>une occasion de créer des souvenirs inoubliables</i>. 
+        C'est pourquoi nous nous engageons à vous proposer des itinéraires soigneusement conçus, 
+        des hébergements de qualité, et des activités authentiques qui vous feront vivre des moments exceptionnels. 
+        Que vous souhaitiez découvrir de nouvelles cultures, admirer des paysages à couper le souffle ou simplement vous ressourcer, notre équipe est là pour transformer vos rêves de voyage en réalité. 
+        Explorez le monde avec nous, et laissez-nous faire de vos vacances une aventure extraordinaire !
+    </p>
+    <hr>
+    <section>
+        <h3 style="font-family:verdana;">&nbsp;Nos promotions hebdomadaire</h3>
+        <h4>Offre Spéciale pour les Groupes</h4>
+        Réduction de 10 % pour les réservations de groupes de 6 personnes.<br>
+        <br><b>Durée :</b> Offerte tout au long de l'année.</br>
+        <img src="image-removebg-preview.png" width="400" alt="agence de voyage" height="200" />
+    </section>
+</article>
+</main>
+</div>
+ <footer>
+        <p>Notre adresse est <address>Voyage Prestige - 456 Rue des Horizons
+            1000 Tunis, Tunisie</address>
+        </p>
+        <p>
+            Téléphone : +216 71 234 567
+        </p>
+        <p>
+            Email : contact@voyagesevasions.tn
+        </p>
+        <small>2024 ENIT - All rights reserved</small>
+    </footer>
+    
+
+</body>
+
+</html>
